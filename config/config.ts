@@ -1,3 +1,6 @@
+import { UrlObject } from 'url';
+declare type Url = string | UrlObject;
+
 type PageConfig = {
   seo: {
     title: String,
@@ -8,7 +11,7 @@ type PageConfig = {
     firstLine: String,
     secondLine: String
   },
-  menu: Array<{label: String, url: String}>,
+  menu: Array<{label: String, url: Url}>,
   heroSection: {
     title: String,
     description: String,
@@ -73,6 +76,7 @@ const config: PageConfig =  {
     secondLine: "GOMES"
   },
   menu: [
+    {label: "Início", url: "/"},
     {label: "Sobre", url: "#about"},
     {label: "Portfólio", url: "#portfolio"},
     {label: "Projetos", url: "#projects"},
