@@ -3,65 +3,65 @@ declare type Url = string | UrlObject;
 
 type PageConfig = {
   seo: {
-    title: String,
-    description: String,
-    favicon: String,
+    title: string,
+    description: string,
+    favicon: string,
   },
   logo: {
-    firstLine: String,
-    secondLine: String
+    firstLine: string,
+    secondLine: string
   },
-  menu: Array<{label: String, url: Url}>,
+  menu: Array<{label: string, url: Url}>,
   heroSection: {
-    title: String,
-    description: String,
-    buttons: Array<{text: String, url: String, target: String}>
+    title: string,
+    description: string,
+    buttons: Array<{text: string, url: string, target: string}>
   },
   presentationSection: {
-    description: String,
-    technologies: Array<String>
+    description: string,
+    technologies: Array<string>
   },
   worksSection: {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     works: Array<{
-      title: String, 
-      description: String, 
-      cover: String, 
-      youtubeLink: String, 
-      externalLink?: String
+      title: string, 
+      description: string, 
+      cover: string, 
+      youtubeLink: string, 
+      externalLink?: string
     }>
   },
   projectsSection: {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     projects: Array<{
-      title: String,
-      description: String,
-      cover: String,
-      youtubeLink: String,
-      externalLink: String,
-      githubLink: String
+      title: string,
+      description: string,
+      cover: string,
+      youtubeLink: string,
+      externalLink: string,
+      githubLink: string
     }>
   },
   testimonialsSection: {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     testimonials: Array<{
-      name: String,
-      role: String,
-      obs: String | null,
-      job: String,
-      message: String
+      name: string,
+      role: string,
+      obs: string | null,
+      job: string,
+      message: string
     }>
   },
   contactSection: {
-    title: String,
-    subtitle: String,
-    networks: Array<{network: String, url: String}>
+    title: string,
+    subtitle: string,
+    networks: Array<{network: string, url: string}>
   },
   copySection: {
-    text: String
+    text: string
   }
 }
 
@@ -86,7 +86,7 @@ const config: PageConfig =  {
     title: "Desenvolvedor FullStack",
     description: "Sistemas Web, Desktop, API's, Aplicativos e Sites Wordpress",
     buttons: [
-      {text: "Orçamento", url: "#contact", target: ""},
+      {text: "Contato", url: "#contact", target: ""},
       {text: "Whastapp", url: "https://api.whatsapp.com/send?phone=5538984253121", target: "_blank"}
     ]
   },

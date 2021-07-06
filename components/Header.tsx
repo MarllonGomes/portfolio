@@ -25,7 +25,11 @@ export default function Header() {
         </button>
         <ul className={'mobileMenu ' + (mobileMenuStatus ? 'active' : '')}>
           {PageConfig.menu.map(menuItem => {
-            return <li><Link href={menuItem.url}><a>{menuItem.label}</a></Link></li>
+            return <li key={String(menuItem.url)}>
+                      <Link href={menuItem.url}>
+                        <a onClick={(e) => {setMobileMenuStatus(false)}}>{menuItem.label}</a>
+                      </Link>
+                    </li>
           })}
         </ul>
       </div>

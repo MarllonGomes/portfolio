@@ -1,0 +1,53 @@
+.hero {
+  padding: 14rem 3rem 5rem 1rem;
+  position: relative;
+
+  &__title {
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    display: block;
+    color: $secondaryColor;
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: $thirdColor;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-right:1rem;
+    text-align: center;
+    line-height: 1;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid $primaryColor;
+    border-radius: 50rem;
+    padding: .7rem 2rem;
+    color: $primaryColor;
+    transition: all ease .2s;
+
+    &:hover, &:focus, &:active {
+      background-color: $primaryColor;
+      color: $fourthColor;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: $primaryColor;
+    width: 50%;
+    height: 11rem;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
